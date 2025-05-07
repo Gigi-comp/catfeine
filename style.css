@@ -1,0 +1,209 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(to bottom, rgb(240, 210, 174), rgb(207, 153, 117), rgb(202, 139, 68), rgb(255, 226, 189));
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10%;
+    font-size: 110%;
+    background: linear-gradient(to right,rgb(187, 149, 118), rgb(248, 228, 210), rgb(236, 198, 157), rgb(250, 208, 173));
+    margin: 0;
+}
+header p{
+    font-family: "Lobster", sans-serif;
+    font-size: 130%;
+}
+.logo{
+    box-shadow: none;
+    display: flex;
+    justify-items: left;
+    align-items: center;
+    
+}
+.logo img{
+    box-shadow: none;
+}
+
+header ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: flex-end;
+}
+.banner{
+    background-image: url(img/Banner.png);
+    background-size: cover;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    color: rgb(240, 226, 218);
+    display: flex;
+    align-items: center;  /* alinha verticalmente */
+    justify-content: center;  /* alinha horizontalmente */
+    flex-direction: column;
+
+}
+.banner h1{
+    font-size: 400%;
+    font-family: "Lobster", sans-serif;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black; 
+}
+.banner h2{
+    font-family: "Lobster", sans-serif;
+    font-weight: 100;
+    font-size: 250%;
+    color:rgb(255, 255, 255);
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black; 
+}
+
+.about{
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+.text{
+    margin-top: 0;
+    margin-right: 9%;
+    font-size: 110%;
+}
+.text h2{
+    margin-top: 0;
+    font-size: 190%;
+    font-family: "Lobster", sans-serif;
+    color: rgb(59, 48, 42);
+}
+
+
+#menu{
+    text-align: center;
+}
+#menu h1{
+    color: rgb(37, 30, 26);
+    font-family: "Lobster", sans-serif;
+    font-size: 60px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content:center;
+    justify-items: center;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px 0;
+    gap: 5%;
+    padding: 5%;
+    background-image: url(img/coffee.jpg);
+    background-size: contain;
+    margin: 0 7% 7% 7%;
+}
+img{
+    border-radius: 15px;
+    box-shadow: 8px 4px 5px 0 rgb(90, 78, 53);
+}
+.itemone,.itemtwo,.itemthree,.itemfour{
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 3px 5px rgba(82, 67, 39, 0.479);
+    padding: 14px 30px;
+    background-color: rgba(252, 226, 204, 0.671);
+}
+.itemone:hover,.itemtwo:hover,.itemthree:hover,.itemfour:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+
+#meetcatstitle{
+    color: rgb(37, 30, 26);
+    font-family: "Lobster", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15%;
+}
+.Meetcats{
+    margin: 5px 14% 10px 14%;
+    align-items: center;
+    text-align: justify;
+    background-image: url(img/coffeebeans.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+
+.catone,.catthree{
+    display: flex;
+    flex-direction:row;
+    text-align: justify;
+    background-color:rgba(247, 237, 229, 0.699) ;
+    margin: 5px 0 5px 0;
+    border: 1px solid rgb(128, 75, 44);
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px 0 rgb(51, 50, 50);
+}
+.cattwo,.catfour{
+    display: flex;
+    flex-direction:row-reverse;
+    text-align: justify;
+    background-color:rgba(247, 237, 229, 0.699) ;
+    margin: 5px 0 5px 0;
+    border: 1px solid rgb(128, 75, 44);
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px 0 rgb(51, 50, 50);
+}
+.catone p,.cattwo p,.catthree p,.catfour p{
+    color: rgb(37, 30, 26);
+    font-size: 150%;
+    padding: 40px;
+    
+}
+.catone:hover, .cattwo:hover, .catthree:hover, .catfour:hover{
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(90, 53, 31);
+    font-weight: 600;
+    display: inline-block;
+    
+}
+a:hover{
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+    
+}
+
+
+footer{
+    justify-items: center;
+    margin:60px 0 10px 0;
+}
+footer p{
+    font-weight: 500;
+}
+.brand{
+    justify-items: center;
+}
+.brand img{
+    box-shadow: none;
+}
